@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section with Profile Image and Hero Text -->
+  <header>
+    <div class="profile-image">
+      <img src="/image/profile.jpg" alt="Profile Image">
+    </div>
+    <h1>Hello, I'm Anne Raquizha Amolacion Lequin</h1>
+    <p>Designer | Editor | Graphic Artist</p>
+    <a href="#contact" class="btn-primary">Connect</a>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Hi, I'm <span class="highlight">Anne</span>! <br> <br>A Passionate Photoshop Designer </p> <br>
+      <p>I'm a skilled graphic designer for detail and a passion for creating visually stunning designs. I specialize in using Adobe Photoshop to bring your ideas to life.<br> Whether it's crafting eye-catching tarpaulin layouts, designing elegant invitations or creating memorable birthday party themes, I've got you covered</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Adobe Photoshop</div>
+      <div class="skill">Creativity</div>
+      <div class="skill">Editing Mastery</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="/image/sov1.jpg" alt="Project Alpha Image " onclick="openLightbox('sov1.jpg')">
+        <img src="/image/sov2.jpg" alt="Project Alpha Image" onclick="openLightbox('sov2.jpg')">
+        <h3>Souvenirs</h3>
+      </div>
+      <div class="project-card">
+        <img src="/image/tarp1.jpg" alt="Project Beta Image" onclick="openLightbox('tarp1.jpg')">
+        <img src="/image/tarp2.jpg" alt="Project Beta Image" onclick="openLightbox('tarp2.jpg')">
+        <h3>Tarpaulin</h3>
+      </div>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="/image/rushId.jpg" alt="Project Alpha Image" onclick="openLightbox('rushId.jpg')">
+        <h3>Rush ID</h3>
+      </div>
+      <div class="project-card">
+        <img src="/image/sticker.jpg" alt="Project Beta Image" onclick="openLightbox('sticker.jpg')">
+        <h3>Sticker</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" src="">
+</div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 [Your Name]. Designed for the Future.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
